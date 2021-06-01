@@ -11,7 +11,7 @@
         <!--Profile-->
         <scene sceneID="3eP-OQ-1hM">
             <objects>
-                <viewController id="VZZ-85-vLu" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VZZ-85-vLu" customClass="LoginViewController" customModule="Ultimate_GG_s" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vVf-dJ-762">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,9 @@
                                 <state key="normal" title="Don't have an account?">
                                     <color key="titleColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="CreateAccountTapped:" destination="VZZ-85-vLu" eventType="touchUpInside" id="shP-xt-qpY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzz-6X-BAY">
                                 <rect key="frame" x="60" y="539" width="294" height="50"/>
@@ -84,7 +87,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="hxj-Vz-cME">
             <objects>
-                <viewController id="jld-Kp-jJL" customClass="SignUpViewController" customModule="Ultimate_GG_s" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="signUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jld-Kp-jJL" customClass="SignUpViewController" customModule="Ultimate_GG_s" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ama-b4-njC" customClass="SignUpViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,10 +118,16 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="SignUpTapped:" destination="ama-b4-njC" eventType="touchUpInside" id="oKG-sn-rBW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HP-Wl-bzS">
                                 <rect key="frame" x="119" y="597" width="176" height="30"/>
                                 <state key="normal" title="Already have an account?"/>
+                                <connections>
+                                    <action selector="AlreadyHaveAnAccountTapped:" destination="ama-b4-njC" eventType="touchUpInside" id="ABO-MF-pJm"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ultimate GGs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUA-EL-7HB">
                                 <rect key="frame" x="109.5" y="227.5" width="195" height="41"/>
